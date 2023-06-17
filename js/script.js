@@ -1,6 +1,7 @@
-const serviceClassic = Document.querySelector(".service-content-classic");
-const serviceClassicItem = Document.querySelector(".service-item-classic");
-serviceClassicItem.addEventListener("click", function () {
-  serviceClassic.classlist.toggle(".service-content--active");
-  serviceClassicItem.classlist.toggle("service-item--active");
+const serviceContentClassic = document.querySelector(
+  ".service-content-classic"
+);
+const serviceItemClassic = document.querySelector(".service-item-classic");
+serviceContentClassic.addEventListener("click", function () {
+  serviceContentClassic.classList.toggle(".service-content--active");
 });

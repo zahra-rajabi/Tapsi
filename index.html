@@ -191,49 +191,49 @@
         <div class="container">
           <h3 class="heading-tertiary">سرویس‌های تپسی</h3>
           <div class="service-list">
-            <a href="#" class="service-item">
+            <a href="#" class="service-item service-item-classic">
               <img
                 src="image/services/classic.png"
                 alt="سرویس تپسی کلاسیک"
                 class="service-image service-item--active" />
               <p class="service-text">تپسی کلاسیک</p>
             </a>
-            <a href="#" class="service-item">
+            <a href="#" class="service-item service-item-telephone">
               <img
                 src="image/services/telephon.png"
                 alt="سرویس تپسی تلفنی"
                 class="service-image" />
               <p class="service-text">تپسی تلفنی</p>
             </a>
-            <a href="#" class="service-item">
+            <a href="#" class="service-item service-item-line">
               <img
                 src="image/services/line.png"
                 alt="سرویس تپسی لاین"
                 class="service-image" />
               <p class="service-text">تپسی لاین</p>
             </a>
-            <a href="#" class="service-item">
+            <a href="#" class="service-item service-item-motor">
               <img
                 src="image/services/motopeyk.png"
                 alt="سرویس موتوپیک"
                 class="service-image" />
               <p class="service-text">موتوپیک</p>
             </a>
-            <a href="#" class="service-item">
+            <a href="#" class="service-item service-item-auto">
               <img
                 src="image/services/autopeyk.png"
                 alt="سرویس اتوپیک"
                 class="service-image" />
               <p class="service-text">اتوپیک</p>
             </a>
-            <a href="#" class="service-item">
+            <a href="#" class="service-item service-item-plus">
               <img
                 src="image/services/plus.png"
                 alt="سرویس تپسی پلاس "
                 class="service-image" />
               <p class="service-text">تپسی پلاس</p>
             </a>
-            <a href="#" class="service-item">
+            <a href="#" class="service-item service-item-hamyar">
               <img
                 src="image/services/hamyar.png"
                 alt=" همیار"
@@ -242,7 +242,7 @@
             </a>
           </div>
           <div class="service-content-box">
-            <article class="service-content service-content--active">
+            <article class="service-content service-content-classic">
               <div class="service-content__text">
                 <h4 class="heading-fourtary">تپسی کلاسیک</h4>
                 <p class="service-content__text-content">
@@ -259,7 +259,7 @@
                   alt="tapsi classic service" />
               </div>
             </article>
-            <article class="service-content">
+            <article class="service-content service-content-telephone">
               <div class="service-content__text">
                 <h4 class="heading-fourtary">تپسی تلفنی</h4>
                 <p class="service-content__text-content">
@@ -278,7 +278,7 @@
                   alt="tapsi telephon service" />
               </div>
             </article>
-            <article class="service-content">
+            <article class="service-content service-content-line">
               <div class="service-content__text">
                 <h4 class="heading-fourtary">تپسی لاین</h4>
                 <p class="service-content__text-content">
@@ -294,7 +294,7 @@
                   alt="Line telephon service" />
               </div>
             </article>
-            <article class="service-content">
+            <article class="service-content service-content-motor">
               <div class="service-content__text">
                 <h4 class="heading-fourtary">موتوپیک</h4>
                 <p class="service-content__text-content">
@@ -312,7 +312,7 @@
                   alt="tapsi motopeyk service" />
               </div>
             </article>
-            <article class="service-content">
+            <article class="service-content service-content-auto">
               <div class="service-content__text">
                 <h4 class="heading-fourtary">اتوپیک</h4>
                 <p class="service-content__text-content">
@@ -330,7 +330,7 @@
                   alt="tapsi autopeyk service" />
               </div>
             </article>
-            <article class="service-content">
+            <article class="service-content service-content-plus">
               <div class="service-content__text">
                 <h4 class="heading-fourtary">تپسی پلاس</h4>
                 <p class="service-content__text-content">
@@ -348,7 +348,7 @@
                   alt="tapsi plus service" />
               </div>
             </article>
-            <article class="service-content">
+            <article class="service-content service-content-hamyar">
               <div class="service-content__text">
                 <h4 class="heading-fourtary">همیار</h4>
                 <p class="service-content__text-content">
@@ -379,11 +379,27 @@
                 سازمان‌ها فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های
                 درون‌شهری و ارسال کالاهای خود را به سادگی مدیریت کنید.
               </p>
-              <div class="forCompanies-btns">
-                <a href="#" class="forCompanies-btns__btn"
+              <div class="forCompanies-btns for">
+                <a
+                  href="#"
+                  class="forCompanies-btns__btn forCompanies-btns__btn--unfill"
                   >اطلاعات بیشتر سرویس سازمانی
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="forCompanies-btns__btn-icon"
+                    viewBox="0 0 512 512">
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="48"
+                      d="M328 112L184 256l144 144" />
+                  </svg>
                 </a>
-                <a href="#" class="nav-btn__link forCompanies-btns__btn"
+                <a
+                  href="#"
+                  class="nav-btn__link forCompanies-btns__btn forCompanies-btns__btn--fill"
                   >ورود و ثبت نام پنل سازمانی</a
                 >
               </div>
@@ -391,14 +407,40 @@
 
             <div class="forCompanies-image">
               <img
-                class="forCompanies-image__img"
+                class="forCompanies-image__img1"
                 src="image/forCompanies/charts.webp"
                 alt="an iMac with charts" />
+            </div>
+          </div>
+          <div class="forCompanies-wrapper">
+            <div class="forCompanies-image">
+              <img
+                class="forCompanies-image__img2"
+                src="image/forCompanies/buy.webp"
+                alt="an iMac with charts" />
+            </div>
+            <div class="forCompanies-content">
+              <h3 class="heading-tertiary">خرید کد اعتبار تپسی</h3>
+              <p class="paraghraph">
+                کد اعتبار تپسی امکان استفاده از تخفیف یک تا ده درصدی سفر با تپسی
+                را برای کاربران، کسب و کارها و سازمان‌ها فراهم می‌کند. تنها با
+                صرف چند دقیقه می‌توانید این کد را تهیه کنید تا هزینه سفرهایتان
+                با تپسی را کاهش دهید یا آن را در اختیار کارکنان و مشتریانتان
+                بگذارید.
+              </p>
+              <div class="forCompanies-btns for">
+                <a
+                  href="#"
+                  class="nav-btn__link forCompanies-btns__btn forCompanies-btns__btn--fill"
+                  >خرید کد اعتبار و تخفیف</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">footer</footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
