@@ -245,14 +245,14 @@ html {
 /* service content box style */
 .service-content-box {
   padding: 4.8rem 0 9.6rem;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
   position: relative;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
 .service-content {
   display: grid;
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
+  visibility: hidden;
   position: absolute;
   grid-template-columns: repeat(2, 1fr);
   gap: 5.2rem;
@@ -287,10 +287,10 @@ html {
 .forCompanies {
   padding: 4.2rem 0;
 }
-.forCompanies container {
+.forCompanies .container {
   display: flex;
-  flex-direction: row;
-  gap: 4.8rem;
+  flex-direction: column;
+  gap: 18rem;
 }
 .forCompanies-wrapper {
   display: grid;
@@ -318,13 +318,12 @@ html {
 }
 .forCompanies-btns__btn {
   color: #ff5b35;
-  font-size: 1.6rem !important;
+  padding: 1.4rem 3.2rem;
+  font-size: 1.7rem !important;
   font-weight: 500;
 }
 .forCompanies-btns__btn-icon {
   height: 1.6rem;
-}
-.forCompanies-btns__btn--fill {
 }
 .forCompanies-btns__btn--fill:hover {
   opacity: 0.9;
@@ -333,4 +332,56 @@ html {
   display: flex;
   align-items: center;
   gap: 0.2rem;
+}
+/* animation */
+@keyframes ChangingDisplay {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  10% {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+  98% {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+.service-content-classic {
+  animation: ChangingDisplay 10s;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
+}
+.service-content-telephone {
+  animation: ChangingDisplay 10s 10s;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
+}
+.service-content-line {
+  animation: ChangingDisplay 10s 20s;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
+}
+
+.service-content-motor {
+  animation: ChangingDisplay 10s 30s;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
+}
+.service-content-auto {
+  animation: ChangingDisplay 10s 40s;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
+}
+.service-content-plus {
+  animation: ChangingDisplay 10s 50s;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
+}
+.service-content-hamyar {
+  animation: ChangingDisplay 10s 60s;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
