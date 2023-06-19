@@ -2,6 +2,8 @@
 graycolor: #545454
 textGrayColor:#333;
 orangecolor: #ff5b35;
+graycolorDark : #4d4d4d
+bluecolor:#0065dc
 */
 @font-face {
   font-family: "danaLight";
@@ -93,7 +95,7 @@ html {
 .nav-btn__link:visited {
   color: #fff;
   background-color: #ff5b35;
-  padding: 1.1rem 3.8rem;
+  padding: 1.6rem 3.2rem;
   font-size: 1.5rem;
   border-radius: 8px;
 }
@@ -285,7 +287,7 @@ html {
 /* forCompanies styles start from here */
 /* ////////////////////////////////////////////////////// */
 .forCompanies {
-  padding: 4.2rem 0;
+  padding: 11.2rem 0;
   margin-top: 20%;
 }
 .forCompanies .container {
@@ -315,7 +317,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.2rem;
+  gap: 1.6rem;
 }
 .forCompanies-btns__btn {
   color: #ff5b35;
@@ -333,6 +335,7 @@ html {
   display: flex;
   align-items: center;
   gap: 0.2rem;
+  padding: 0;
 }
 /* ////////////////////////////////////////////////////// */
 /* packages styles start from here */
@@ -340,11 +343,11 @@ html {
 .packages {
   padding: 4.2rem 0;
   background-image: url(../image/parallax.jpeg);
-  /* background-color: #567093; */
+
   background-repeat: no-repeat;
   background-size: cover;
   height: 20rem;
-  position: sticky;
+  background-attachment: fixed;
 }
 
 .packages-wrapper {
@@ -380,7 +383,58 @@ html {
   border: 1px solid #fff;
   margin: 1.8rem 0;
 }
+/* ////////////////////////////////////////////////////// */
+/* benefit styles start from here */
+/* ////////////////////////////////////////////////////// */
+.benefit {
+  padding: 11.5rem 0;
+}
+.benefit-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.benefit-content {
+  padding: 0 7.2rem;
+}
+.benefit-image__img {
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 25px 20px -20px;
+}
+.benefit-content__subheading {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #4d4d4d;
+}
+.benefit-content__list-box {
+  margin-bottom: 6rem;
+}
+.benefit-content__text {
+  font-size: 1.8rem;
+  font-family: "danaReg";
+  margin: 2rem 0 5rem;
+}
+.benefit-content__list-item {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
 
+.benefit-content__subheading-link:link,
+.benefit-content__subheading-link:visited {
+  color: #0065dc;
+}
+.benefit-content__btns {
+  display: flex;
+  gap: 1.8rem;
+}
+.benefit-content__btns-btn:link,
+.benefit-content__btns-btn:visited {
+  background-color: #0065dc;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  font-family: "danaMed";
+  border-radius: 8px;
+}
 /* animation */
 @keyframes ChangingDisplay {
   0% {
