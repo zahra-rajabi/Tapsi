@@ -334,6 +334,50 @@ html {
   align-items: center;
   gap: 0.2rem;
 }
+/* ////////////////////////////////////////////////////// */
+/* packages styles start from here */
+/* ////////////////////////////////////////////////////// */
+.packages {
+  padding: 4.2rem 0;
+  background-image: url(../image/parallax.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+.packages-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.pakages-content {
+  padding: 0 10px;
+  text-align: center;
+  width: 24.5%;
+  height: 100%;
+}
+.pakages-content:hover .packages-content__text {
+  display: block;
+}
+.heading-fiftary {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.packages-content__text {
+  display: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.packages-wall {
+  background-color: #fff;
+  height: 8rem;
+  margin: 3.6rem 0;
+  width: 3px;
+}
+
 /* animation */
 @keyframes ChangingDisplay {
   0% {
