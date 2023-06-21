@@ -3,6 +3,7 @@ graycolor: #545454
 textGrayColor:#333;
 orangecolor: #ff5b35;
 graycolorDark : #4d4d4d
+graycolorlight:#9b9b9b;
 bluecolor:#0065dc
 */
 @font-face {
@@ -435,6 +436,51 @@ html {
   font-family: "danaMed";
   border-radius: 8px;
 }
+/* ////////////////////////////////////////////////////// */
+/* news styles start from here */
+/* ////////////////////////////////////////////////////// */
+.news {
+  padding: 4.8rem 0;
+}
+.news .heading-tertiary {
+  margin-bottom: 2.8rem;
+}
+.news-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.2rem;
+  padding: 2.4rem 4.8rem;
+  justify-content: center;
+}
+.news-item {
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+}
+.news-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 40px -10px;
+}
+.news-item__image-img {
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: 1.2rem;
+}
+.news-item__heading {
+  line-height: 3.3rem;
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
+}
+.news-item__text {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #9b9b9b;
+}
+/*news-item
+
+
+news-item__content
+
+
+news-item__image-img */
 /* animation */
 @keyframes ChangingDisplay {
   0% {
