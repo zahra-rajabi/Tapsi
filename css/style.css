@@ -504,6 +504,22 @@ html {
   font-size: 1.6rem;
   letter-spacing: 3px;
 }
+/* ////////////////////////////////////////////////////// */
+/* footer styles start from here */
+/* ////////////////////////////////////////////////////// */
+/* .footer{} */
+/* .footer-wrapper{} */
+/* .footer-tapsi-logo{} */
+/* .footer-tapsi-logo__svg{} */
+/* .footer-tapsi-logo__heading{} */
+/* .footer-tapsi-logo__rights{} */
+/* .footer-tapsi{} */
+/* .footer-tapsi__heading{} */
+/* .footer-tapsi__list{} */
+/* .footer-tapsi__list-item{} */
+/* .footer-logos{} */
+/* .footer-logos__img{} */
+/* .footer-tapsi__list-link{} */
 /* animation */
 @keyframes ChangingDisplay {
   0% {
