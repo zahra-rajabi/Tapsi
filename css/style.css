@@ -5,6 +5,7 @@ orangecolor: #ff5b35;
 graycolorDark : #4d4d4d
 graycolorlight:#9b9b9b;
 bluecolor:#0065dc
+footergrayColor: #ACACAC
 backgroundgrayColor: #f8f8f9;
 */
 @font-face {
@@ -507,19 +508,90 @@ html {
 /* ////////////////////////////////////////////////////// */
 /* footer styles start from here */
 /* ////////////////////////////////////////////////////// */
-/* .footer{} */
-/* .footer-wrapper{} */
-/* .footer-tapsi-logo{} */
-/* .footer-tapsi-logo__svg{} */
-/* .footer-tapsi-logo__heading{} */
-/* .footer-tapsi-logo__rights{} */
-/* .footer-tapsi{} */
-/* .footer-tapsi__heading{} */
-/* .footer-tapsi__list{} */
-/* .footer-tapsi__list-item{} */
-/* .footer-logos{} */
-/* .footer-logos__img{} */
-/* .footer-tapsi__list-link{} */
+.footer {
+  padding: 4.8rem 0;
+  background-color: #000;
+}
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(4, 1fr) 2fr;
+  gap: 2.2rem;
+  align-content: center;
+}
+.footer-tapsi-logo__svg-img {
+  width: 15rem;
+  height: 8rem;
+}
+.footer-tapsi-logo__heading {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.footer-tapsi-logo__rights {
+  color: #acacac;
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+
+.footer-tapsi__heading {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 2.2rem;
+  margin-top: 2.2rem;
+  font-family: "danaMed";
+}
+.footer-tapsi__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.footer-tapsi__list-link:link,
+.footer-tapsi__list-link:visited {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: all 150ms;
+}
+.footer-tapsi__list-link:hover,
+.footer-tapsi__list-link:active {
+  color: #ff5b35;
+}
+.footer-logos {
+  display: grid;
+  grid-template-columns: 2.5fr 3fr 4fr;
+  gap: 1.2rem;
+}
+.footer-logos-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+}
+.footer-logos__img {
+  width: 100%;
+  height: 10rem;
+}
+.footer-social__heading {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+.footer-social__icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.footer-social__icon-svg {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+.footer-social__icon-link:hover path,
+.footer-social__icon-link:active path {
+  fill: #ff5b35;
+}
+
 /* animation */
 @keyframes ChangingDisplay {
   0% {
@@ -566,31 +638,38 @@ html {
   }
 }
 .service-content-classic {
-  animation: ChangingDisplay 10s, ChangingDisplay2 10s 70s;
+  animation: ChangingDisplay 10s, ChangingDisplay2 10s 70s,
+    ChangingDisplay2 10s 140s;
   border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
 .service-content-telephone {
-  animation: ChangingDisplay 10s 10s, ChangingDisplay2 10s 80s;
+  animation: ChangingDisplay 10s 10s, ChangingDisplay2 10s 80s,
+    ChangingDisplay2 10s 150s;
   border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
 .service-content-line {
-  animation: ChangingDisplay 10s 20s, ChangingDisplay2 10s 90s;
+  animation: ChangingDisplay 10s 20s, ChangingDisplay2 10s 90s,
+    ChangingDisplay2 10s 160s;
   border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
 
 .service-content-motor {
-  animation: ChangingDisplay 10s 30s, ChangingDisplay2 10s 100s;
+  animation: ChangingDisplay 10s 30s, ChangingDisplay2 10s 100s,
+    ChangingDisplay2 10s 170s;
   border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
 .service-content-auto {
-  animation: ChangingDisplay 10s 40s, ChangingDisplay2 10s 110s;
+  animation: ChangingDisplay 10s 40s, ChangingDisplay2 10s 110s,
+    ChangingDisplay2 10s 180s;
   border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
 .service-content-plus {
-  animation: ChangingDisplay 10s 50s, ChangingDisplay2 10s 120s;
+  animation: ChangingDisplay 10s 50s, ChangingDisplay2 10s 120s,
+    ChangingDisplay2 10s 190s;
   border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
 .service-content-hamyar {
-  animation: ChangingDisplay 10s 60s, ChangingDisplay2 10s 130s;
+  animation: ChangingDisplay 10s 60s, ChangingDisplay2 10s 130s,
+    ChangingDisplay2 10s 200s;
   border-bottom: 1px solid rgba(51, 51, 51, 0.123);
 }
