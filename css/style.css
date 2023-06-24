@@ -253,7 +253,7 @@ html {
   position: relative;
 }
 .service-content {
-  display: grid;
+  display: none;
   opacity: 0;
   padding-bottom: 7.4rem;
   pointer-events: none;
@@ -279,9 +279,7 @@ html {
   height: 100%;
 }
 .service-content--active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: visible;
+  display: grid;
 }
 .service-item--active {
   opacity: 1;
@@ -570,7 +568,7 @@ html {
 }
 .footer-logos__img {
   width: 100%;
-  height: 10rem;
+  height: 8rem;
 }
 .footer-social__heading {
   color: #fff;
