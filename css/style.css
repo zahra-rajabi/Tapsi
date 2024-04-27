@@ -253,15 +253,13 @@ html {
   position: relative;
 }
 .service-content {
-  display: none;
-  opacity: 0;
   padding-bottom: 7.4rem;
-  pointer-events: none;
-  visibility: hidden;
-  position: absolute;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   gap: 5.2rem;
+  position: absolute;
 }
+
 .heading-fourtary {
   font-size: 2.8rem;
   margin-bottom: 1.8rem;
@@ -275,7 +273,7 @@ html {
   color: #333;
 }
 .service-content__image-img {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 .service-content--active {
@@ -288,7 +286,7 @@ html {
 /* forCompanies styles start from here */
 /* ////////////////////////////////////////////////////// */
 .forCompanies {
-  padding: 11.2rem 0;
+  padding: 5.8rem 0 11.2rem 0;
   margin-top: 20%;
 }
 .forCompanies .container {
@@ -589,85 +587,9 @@ html {
 .footer-social__icon-link:active path {
   fill: #ff5b35;
 }
-
-/* animation */
-@keyframes ChangingDisplay {
-  0% {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-  10% {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
-  98% {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
+.active {
+  display: grid;
 }
-@keyframes ChangingDisplay2 {
-  0% {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-  10% {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
-  98% {
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-}
-.service-content-classic {
-  animation: ChangingDisplay 10s, ChangingDisplay2 10s 70s,
-    ChangingDisplay2 10s 140s;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
-}
-.service-content-telephone {
-  animation: ChangingDisplay 10s 10s, ChangingDisplay2 10s 80s,
-    ChangingDisplay2 10s 150s;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
-}
-.service-content-line {
-  animation: ChangingDisplay 10s 20s, ChangingDisplay2 10s 90s,
-    ChangingDisplay2 10s 160s;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
-}
-
-.service-content-motor {
-  animation: ChangingDisplay 10s 30s, ChangingDisplay2 10s 100s,
-    ChangingDisplay2 10s 170s;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
-}
-.service-content-auto {
-  animation: ChangingDisplay 10s 40s, ChangingDisplay2 10s 110s,
-    ChangingDisplay2 10s 180s;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
-}
-.service-content-plus {
-  animation: ChangingDisplay 10s 50s, ChangingDisplay2 10s 120s,
-    ChangingDisplay2 10s 190s;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
-}
-.service-content-hamyar {
-  animation: ChangingDisplay 10s 60s, ChangingDisplay2 10s 130s,
-    ChangingDisplay2 10s 200s;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.123);
+.non-active {
+  display: none;
 }
