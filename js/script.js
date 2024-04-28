@@ -1,29 +1,18 @@
-let classic = document.querySelector(".service-content-classic");
-// let telephone = document.querySelector();
-// let line = document.querySelector(".service-content-line");
-// let motor = document.querySelector(".service-content-motor");
-// let auto = document.querySelector(".service-content-auto");
-// let plus = document.querySelector(".service-content-plus");
-// let hamyar = document.querySelector(" .service-content-hamyar");
-
-let serviceContent = document.querySelector(".service-content-box").children;
-
+let serviceContent = document.querySelectorAll(".service-content");
+let serviceList = document.querySelector(".service-list");
+let index = 0;
 setInterval(function () {
-  for (const element of serviceContent) {
-    if (element.classList.contains("service-content-classic")) {
-      element.classList.add("non-active");
-    } else if (element.classList.contains("service-content-telephone")) {
-      element.classList.toggle("active");
-    } else if (element.classList.contains("service-content-line")) {
-      element.classList.toggle("active");
-    } else if (element.classList.contains("service-content-motor")) {
-      element.classList.toggle("active");
-    } else if (element.classList.contains("service-content-auto")) {
-      element.classList.toggle("active");
-    } else if (element.classList.contains("service-content-plus")) {
-      element.classList.toggle("active");
-    } else if (element.classList.contains("service-content-hamyar")) {
-      element.classList.toggle("active");
-    }
+  if (index == 6) {
+    index = 0;
+    serviceContent[6].classList.remove("active");
+    serviceContent[index].classList.remove("non-active");
+  } else if (index == 0) {
+    serviceContent[index].classList.add("non-active");
+    serviceContent[index + 1].classList.add("active");
+    index++;
+  } else {
+    index++;
+    serviceContent[index - 1].classList.remove("active");
+    serviceContent[index].classList.add("active");
   }
-}, 1000);
+}, 5000);
