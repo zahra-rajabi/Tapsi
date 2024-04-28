@@ -45,6 +45,7 @@ backgroundgrayColor: #f8f8f9;
 html {
   font-size: 62.5%;
   font-family: "danaLight", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 .container {
   width: 128rem;
@@ -241,7 +242,7 @@ html {
 }
 .service-image {
   height: 5rem;
-  opacity: 0.7;
+  opacity: 0.2;
 }
 .service-text {
   font-size: 1.6rem;
