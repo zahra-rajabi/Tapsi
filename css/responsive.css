@@ -188,6 +188,8 @@
   }
   .nav-mobile {
     padding: 6.4rem 3rem;
+  }
+  .nav-mobile--active {
     transform: translateY(0);
   }
   .container:not(.nav-container) {
