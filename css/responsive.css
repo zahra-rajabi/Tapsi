@@ -41,6 +41,7 @@
   }
   .nav-mobile {
     padding: 6.8rem 3rem;
+    display: flex;
   }
   .container:not(.nav-container) {
     width: 120rem;
@@ -48,9 +49,7 @@
   .nav-mobile-logo {
     display: inline-block;
   }
-  .nav-mobile {
-    display: flex;
-  }
+
   .nav-links {
     visibility: hidden;
     pointer-events: none;
@@ -188,7 +187,8 @@
     font-size: 28%;
   }
   .nav-mobile {
-    padding: 5.6rem 3rem;
+    padding: 6.4rem 3rem;
+    transform: translateY(0);
   }
   .container:not(.nav-container) {
     width: 80rem;
@@ -201,7 +201,7 @@
     grid-template-columns: 1fr;
   }
   .forCompanies .container {
-    margin-top: 50rem;
+    margin-top: 50%;
   }
   .news-wrapper {
     grid-template-columns: 1fr;
