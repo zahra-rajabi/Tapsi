@@ -1,8 +1,9 @@
+//////////////////////service Animation
 let serviceContent = document.querySelectorAll(".service-content");
 let serviceContentArray = Array.from(serviceContent);
 let serviceList = document.querySelectorAll(".service-item");
 let firstElement = serviceContentArray[0];
-let links = document.getElementsByTagName("a");
+
 let index = 0;
 
 setInterval(function () {
@@ -33,6 +34,9 @@ serviceList.forEach(function (element) {
   element.addEventListener("click", function (event) {
     [, ...rest] = serviceContent;
     if (event.target.parentNode.classList.contains("service-item")) {
+      serviceList.forEach((element) =>
+        element.firstElementChild.classList.remove("service-item--active")
+      );
       event.target.parentNode.firstElementChild.classList.add(
         "service-item--active"
       );
@@ -52,6 +56,21 @@ serviceList.forEach(function (element) {
       }
 
       index = targetElementIndex;
+      event.preventDefault();
     }
   });
+});
+/////////////////////////////////nav mobile
+
+let navMobileLogo = document.querySelector(".nav-mobile-logo");
+let navMobile = document.querySelector(".nav-mobile");
+
+navMobileLogo.addEventListener("click", function () {
+  if (navMobileLogo.firstElementChild.classList.contains("ph-list")) {
+    navMobileLogo.innerHTML = `<i class="ph ph-x nav-mobile-logo__icon"></i>`;
+    navMobile.classList.add("nav-mobile--active");
+  } else {
+    navMobileLogo.innerHTML = `<i class="ph ph-list nav-mobile-logo__icon"></i>`;
+    navMobile.classList.remove("nav-mobile--active");
+  }
 });
